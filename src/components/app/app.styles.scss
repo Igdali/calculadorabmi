@@ -1,0 +1,89 @@
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.button-container {
+  margin-top: 50px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 25px 0 0;
+  display: block;
+}
+
+input {
+  padding: 0;
+  font-size: 4rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid white;
+
+  &::placeholder {
+    color: white;
+    opacity: 0.25;
+  }
+}
+
+button {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.main-button {
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+}
+
+.form-container {
+  margin-top: 50px;
+}
+
+form {
+  &.imperial {
+    .height {
+      display: inline-block;
+      width: 45%;
+    }
+
+    .height-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
